@@ -13,15 +13,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var ScoreValue: UILabel!
     @IBOutlet weak var RoundValue: UILabel!
     
-    
-    //CHEAT
-    @IBAction func cheatAction(_ sender: UISlider) {
-        
-        print(sender.value.rounded())
-        
-    }
-    
-    //..
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,14 +26,13 @@ class ViewController: UIViewController {
         
         calculScore()
     }
-    //..
+
     
     @IBAction func resetGameAction(_ sender: Any) {
         
         inilializeGame()
     }
     
-    //..
     
     func calculScore(){
         
@@ -84,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     
-    //..
+
     
     func generateRandomValue() -> Int {
         
@@ -92,7 +82,7 @@ class ViewController: UIViewController {
         
     }
     
-    //..
+
     
     
     func inilializeGame(){
@@ -118,7 +108,7 @@ class ViewController: UIViewController {
         
     }
     
-    //..
+
     
     func promptAction(promptTitle: String, promptText: String){
         
@@ -128,7 +118,7 @@ class ViewController: UIViewController {
         self.present(alert, animated: true)
     }
 
-    //..
+
     
     func updateLabels(){
         
